@@ -1,0 +1,119 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+  overflow:hidden;
+}
+.container {
+    width: 100%;
+    min-height: 500vh;
+    background-color: #91c164;
+}
+nav {
+    z-index: +2;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #567836;
+}
+
+
+
+
+.logo{
+    padding-top: 10px;
+    padding-left: 510px;
+}
+.logo #imglogo {
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 5px;
+    width: 60px;
+}
+.logo #imglogo:hover {
+  transform: scaleY(-1);
+}
+
+
+
+.ItensNav {
+    display: flex;
+    padding-left: 600px;
+}
+    .ItensNav li{
+        list-style: none;
+        margin: 0 130px;
+    }
+        .ItensNav li a {
+            font-size: 25px;
+            color: #fff;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+
+
+.corpo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.imgbox{
+    position: relative;
+    z-index: +1;
+    width: 100%;
+    height: 100%;
+}
+    .imgbox #folha1 {
+        position: fixed;
+        transform: rotateY(180deg);
+        width: calc(80% - 900px);
+        top: -110px;
+        left: -150px;
+        animation: folha1anim 4s linear infinite;
+    }
+    .imgbox #folha2 {
+        position: relative;
+
+        width: calc(10% 100px);
+        top: -40px;
+        right: 50px;
+        animation: folha2anim 6s linear infinite;
+        opacity: 0.6;
+    }
+@keyframes folha1anim {
+    50% {
+        right: 30px;
+        top: -90px;
+    }
+}
+
+@keyframes folha2anim {
+    50%{
+        right: 30px;
+        top: -90px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

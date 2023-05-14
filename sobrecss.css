@@ -1,0 +1,115 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body {
+ 
+}
+.container {
+    width: 100%;
+    min-height: 1000vh;
+}
+
+nav {
+    z-index: +2;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #567836;
+}
+
+
+
+
+.logo{
+    padding-top: 10px;
+    padding-left: 1090px;
+}
+.logo #imglogo {
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 5px;
+    width: 60px;
+}
+.logo #imglogo:hover {
+  transform: scaleY(-1);
+}
+
+
+
+.ItensNav {
+    display: flex;
+    padding-left: 0px;
+}
+    .ItensNav li{
+        list-style: none;
+        margin: 0 130px;
+    }
+        .ItensNav li a {
+            font-size: 25px;
+            color: #fff;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+
+
+.corpo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("fundo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgbox {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+    .imgbox #folha1 {
+        padding-top: 210px;
+        padding-left: 20px;
+        position: fixed;
+        opacity: 0.7;
+        width: calc(1% 500px);
+        top:20px;
+        right: 10px;
+        animation: folha1anim 10s linear infinite;
+        opacity: 0.8;
+    }
+@keyframes folha1anim {
+    50% {
+        right: 5px;
+        top: -50px;
+    }
+}
+h3 {
+    padding-top:150px;
+    padding-left:100px;
+    z-index: +2;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
